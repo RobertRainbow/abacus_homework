@@ -399,8 +399,8 @@ void Gint::cal_meshball_vlocal_k(
     double** psir_vlbr3,
     double* pvpR)
 {
-    Module::TITLE("Gint_interface","cal_meshball_vlocal_k_re");
-    Module::timer::tick("Gint_interface","cal_meshball_vlocal_k_re");
+    ModuleBase::TITLE("Gint_interface","cal_meshball_vlocal_k_re");
+    ModuleBase::timer::tick("Gint_interface","cal_meshball_vlocal_k_re");
 
     int k = this->bxyz;
     for (int ia1 = 0; ia1 < na_grid; ++ia1)
@@ -428,5 +428,5 @@ void Gint::cal_meshball_vlocal_k(
         }
     }
 
-    Module::timer::tick("Gint_interface","cal_meshball_vlocal_k_re");
+    ModuleBase::timer::tick("Gint_interface","cal_meshball_vlocal_k_re");
 }
